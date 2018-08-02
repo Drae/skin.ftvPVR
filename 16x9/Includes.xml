@@ -10,6 +10,8 @@
 	<include file="Includes_DialogSelect.xml"/>
 	<include file="Includes_DialogSettings.xml"/>
 	<include file="Includes_Home_Widgets_Setup.xml"/>
+	<include file="IncludesPVRChannelsOSD.xml" />
+	<include file="IncludesCustomPVRWindow.xml" />
 	<include file="Viewtype50.xml"/>
 	<include file="Viewtype51.xml"/>
 	<include file="Viewtype52.xml"/>
@@ -18,6 +20,8 @@
 	<include file="Viewtype55.xml"/>
 	<include file="Viewtype56.xml"/>
 	<include file="Viewtype57.xml"/>
+	<include file="Viewtype58.xml"/>
+	<include file="Viewtype59.xml"/>
 	<include file="ForcedViewtype60.xml"/>
 	<include file="ForcedViewtype61.xml"/>
 	<include file="script-skinshortcuts-includes.xml"/>
@@ -113,6 +117,21 @@
 				<include>FullscreenDimensions</include>
 				<fadetime>400</fadetime>
 				<colordiffuse>26ffffff</colordiffuse>
+				<texture background="true">$VAR[Fanart]</texture>
+			</control>
+		</control>
+	</include>
+	<!-- PVR Fanart -->
+	<include name="PVRFanart">
+		<include>VideoBackground</include>
+		<control type="group">
+			<visible>[!Player.HasVideo | Skin.HasSetting(HideVideoBackground)] + Skin.HasSetting(SkinHelper.EnablePVRThumbs)</visible>
+			<animation condition="!Window.Previous(fullscreenvideo)" delay="800" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
+			<animation condition="Window.IsActive(tvchannels) + ControlGroup(1000).HasFocus" effect="fade" end="0" start="100" time="120">Conditional</animation>
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<fadetime>400</fadetime>
+				<colordiffuse>0effffff</colordiffuse>
 				<texture background="true">$VAR[Fanart]</texture>
 			</control>
 		</control>

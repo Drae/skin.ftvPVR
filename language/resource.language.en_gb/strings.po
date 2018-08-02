@@ -1058,3 +1058,35 @@ msgstr ""
 msgctxt "#31255"
 msgid "Reset Home Menu"
 msgstr ""
+
+#: \16x9\MyPVRChannels.xml:234
+msgctxt "#31500"
+msgid "Current time"
+msgstr "Current time"
+
+#: /16x9/MyPVRGuide.xml
+msgctxt "#31501"
+msgid "Switch group"
+msgstr ""
+
+#: /16x9/MyPVRGuide.xml
+msgctxt "#31502"
+msgid "View recordings"
+msgstr ""
+
+#: /16x9/MyPVRChannels.xml
+msgctxt "#31503"
+msgid "View timers"
+msgstr ""
+
+#: /16x9/MyPVRChannels.xml
+msgctxt "#31504"
+msgid "View guide"
+msgstr ""
+
+#: /16x9/MyPVRTimers.xml
+msgctxt "#31348"
+msgid "Toggle disabled items"
+msgstr ""
+
+

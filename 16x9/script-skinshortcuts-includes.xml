@@ -137,24 +137,23 @@
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<label>$LOCALIZE[31234]</label>
-			<label2>addons</label2>
-			<icon>ftv_icon.png</icon>
+			<label>Apps</label>
+			<label2>Custom shortcut</label2>
+			<icon>DefaultProgram.png</icon>
 			<thumb />
-			<property name="labelID">31234</property>
-			<property name="defaultID">31234</property>
-			<property name="translatedPath">ActivateWindow(AddonBrowser,"addons://all/",return)</property>
-			<onclick>ActivateWindow(AddonBrowser,"addons://all/",return)</onclick>
-			<property name="path">ActivateWindow(AddonBrowser,"addons://all/",return)</property>
-			<property name="list">addons://all/</property>
+			<property name="labelID">31101</property>
+			<property name="defaultID">programs</property>
+			<onclick>ActivateWindow(Programs)</onclick>
+			<property name="path">ActivateWindow(Programs)</property>
+			<property name="list">Programs</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-31234</property>
+			<property name="submenuVisibility">num-31101</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<label>$LOCALIZE[31100]</label>
+			<label>Photos</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
@@ -1401,10 +1400,10 @@
 	<include name="skinshortcuts-group-alt-num-15016">
 		<description>No items</description>
 	</include>
-	<include name="skinshortcuts-group-num-31234">
+	<include name="skinshortcuts-group-num-31101">
 		<description>No items</description>
 	</include>
-	<include name="skinshortcuts-group-alt-num-31234">
+	<include name="skinshortcuts-group-alt-num-31101">
 		<description>No items</description>
 	</include>
 	<include name="skinshortcuts-group-num-31100">

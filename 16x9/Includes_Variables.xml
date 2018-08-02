@@ -3472,4 +3472,12 @@
 		<value condition="String.EndsWith(ListItem.Episode,s399)">$LOCALIZE[31146] $LOCALIZE[20359] 399</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
+	<variable name="PVRButtonColor">
+		<value condition="ControlGroup(1000).HasFocus | Control.HasFocus(8)">ff8e8b90</value>
+		<value>ff505559</value>
+	</variable>
+	<variable name="PVRImage">		
+		<value condition="String.IsEmpty(ListItem.Icon) | String.IsEqual(ListItem.Icon,DefaultVideo.png)">views/pvr_fallback.png</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
 </includes>
